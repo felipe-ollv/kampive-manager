@@ -1,0 +1,6 @@
+# Use alongside kampive-infra/compose.yaml. Paths are relative to that first file.
+services:
+  gateway:
+    volumes:
+      - ../kampive-manager/dist:/srv/manager:ro
+      - ../kampive-manager/local/Caddyfile:/etc/caddy/Caddyfile:ro
